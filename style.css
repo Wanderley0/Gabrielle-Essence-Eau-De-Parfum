@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url("fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+img {
+  vertical-align: middle; /* To vertically align an inline-level element's box inside its containing line box. For example, it could be used to vertically position an image in a line of text. */
+}
+
+article {
+  margin-right: 30px;
+}
+
+h1 {
+  font-size: 33px;
+  font-family: Fraunces;
+  font-weight: bold;
+  line-height: 1; /* The line-height property is used to specify the space between lines */
+  margin-bottom: 25px;
+  color: hsl(212, 21%, 14%);
+}
+
+h2 {
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: hsl(228, 12%, 48%);
+}
+
+p {
+  font-size: 14px;
+  font-family: Montserrat;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  font-family: Montserrat;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 100%, 100%);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(157, 38%, 21%);
+}
+
+.container {
+  display: flex;
+  max-width: 600px;
+  margin: 220px auto;
+  gap: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.new-price {
+  font-size: 35px;
+  font-family: Fraunces;
+  font-weight: bold;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  text-decoration-line: line-through;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    margin: 25px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto; /* Maintains image aspect ratio */
+  }
+
+  article {
+    padding: 0 20px;
+    margin-right: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+}
